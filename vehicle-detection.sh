@@ -3,6 +3,8 @@
 source /home/$USER/anaconda3/etc/profile.d/conda.sh
 conda activate openvino
 
+sudo apt install ffmpeg libsm6 libxext6 -y
+
 open_model_zoo_dir="/home/$USER/open_model_zoo"
 model_dir="/home/$USER/open_model_zoo/demos/object_detection_demo/python"
 
