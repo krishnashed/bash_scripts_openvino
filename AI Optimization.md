@@ -250,7 +250,28 @@ It would have been a
 
 Implementation of Text-To-Image generation using Stable Diffusion on Intel CPU.
 
-Setup 
+To setup the environment `stable_diffusion` run
 ```shell
 ./stable-diffusion.sh
 ```
+
+Activate the `stable_diffusion` conda virtual environment 
+```shell
+conda activate stable_diffusion
+```
+
+Run the model, by entering image description
+```shell
+cd ~/stable_diffusion.openvino
+
+python demo.py --prompt "<image-description>"
+
+# Example
+# python demo.py --prompt "Street-art painting of Emilia Clarke in style of Banksy, photorealism"
+```
+
+Example Output
+
+<div style="align:center; margin-left:auto; margin-right:auto">
+<img src="https://github.com/krishnashed/bash_scripts_openvino/blob/main/images/stable-diffusion.png"/>
+</div>
