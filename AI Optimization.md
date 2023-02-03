@@ -83,7 +83,7 @@ Run it as
 ```
 
 <div style="align:center; margin-left:auto; margin-right:auto">
-<img src=""/>
+<img src="https://github.com/krishnashed/bash_scripts_openvino/blob/main/images/human-pose-estimation.png"/>
 </div>
 
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/human-pose-estimation-0005/README.md
@@ -97,7 +97,7 @@ Run it as
 ./image-retreival.sh
 ```
 <div style="align:center; margin-left:auto; margin-right:auto">
-<img src=""/>
+<img src="https://github.com/krishnashed/bash_scripts_openvino/blob/main/images/image-retrieval.png"/>
 </div>
 
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/image-retrieval-0001/README.md
@@ -112,7 +112,7 @@ Run it as
 ```
 
 <div style="align:center; margin-left:auto; margin-right:auto">
-<img src=""/>
+<img src="https://github.com/krishnashed/bash_scripts_openvino/blob/main/images/instance-segmentation.png"/>
 </div>
 
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/instance-segmentation-security-0002/README.md
@@ -127,7 +127,7 @@ Run it as
 ```
 
 <div style="align:center; margin-left:auto; margin-right:auto">
-<img src=""/>
+<img src="https://github.com/krishnashed/bash_scripts_openvino/blob/main/images/number-plate-detection.png"/>
 </div>
 
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/vehicle-license-plate-detection-barrier-0106/README.md
@@ -142,7 +142,8 @@ Run it as
 ```
 
 <div style="align:center; margin-left:auto; margin-right:auto">
-<img src=""/>
+<img src="https://github.com/krishnashed/bash_scripts_openvino/blob/main/images/person-detection.png"/>
+</div>
 
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/person-detection-0303/README.md
 
@@ -156,7 +157,8 @@ Run it as
 ```
 
 <div style="align:center; margin-left:auto; margin-right:auto">
-<img src=""/>
+<img src="https://github.com/krishnashed/bash_scripts_openvino/blob/main/images/product-detection.png"/>
+</div>
 
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/product-detection-0001/README.md
 
@@ -173,7 +175,8 @@ Run it as
 ```
 
 <div style="align:center; margin-left:auto; margin-right:auto">
-<img src=""/>
+<img src="https://github.com/krishnashed/bash_scripts_openvino/blob/main/images/semantic-segmentation.png"/>
+</div>
 
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/semantic-segmentation-adas-0001/README.md
 
@@ -203,6 +206,7 @@ Run it as
 ```
 
 <div style="align:center; margin-left:auto; margin-right:auto">
-<img src=""/>
+<img src="https://github.com/krishnashed/bash_scripts_openvino/blob/main/images/vehicle-detection.png"/>
+</div>
 
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/vehicle-detection-0202/README.md
