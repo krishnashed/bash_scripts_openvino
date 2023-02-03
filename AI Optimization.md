@@ -54,7 +54,7 @@ This is a network for handwritten English text recognition scenario. It consists
 
 Passing Input image 
 <div style="align:center; margin-left:auto; margin-right:auto">
-<img src=""/>
+<img src="https://github.com/krishnashed/bash_scripts_openvino/blob/main/images/handwritting-input.jpg"/>
 </div>
 
 Run it as
