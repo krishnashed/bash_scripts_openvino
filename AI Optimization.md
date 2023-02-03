@@ -194,11 +194,6 @@ $ ./text-to-speech.sh
 [ DEBUG ]       ForwardTacotronTime: 1185.6 ms
 ```
 
-Output
-
-https://user-images.githubusercontent.com/60742358/216589708-21a47fbc-5700-428a-a7bc-95db89a5b165.mov
-
-  
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/text-to-speech-en-0001/README.md
 
 10. Vehicle Detection
@@ -215,3 +210,47 @@ Run it as
 </div>
 
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/vehicle-detection-0202/README.md
+
+11. GPT-2 Text Prediction
+
+The `gpt-2` model is a one of Generative Pre-trained Transformer (GPT) model family, pre-trained on a very large corpus of English data in a self-supervised fashion. The GPT architecture implements a deep neural network, specifically a transformer model, which uses attention in place of previous recurrence- and convolution-based architectures. Attention mechanisms allow the model to selectively focus on segments of input text it predicts to be the most relevant. GPT-2 is trained with a simple objective: predict the next word, given all of the previous words within some text.
+
+
+Run it as 
+```shell
+$ ./gpt2.sh
+
+[ DEBUG ] Loaded vocab file from /home/krishnashed/public/gpt-2/gpt2/vocab.json, get 50257 tokens
+[ INFO ] OpenVINO Runtime
+[ INFO ]        build: 2022.3.0-9052-9752fafe8eb-releases/2022/3
+[ INFO ] Reading model /home/krishnashed/public/gpt-2/FP32/gpt-2.xml
+[ INFO ] The model /home/krishnashed/public/gpt-2/FP32/gpt-2.xml is loaded to CPU
+Type input prompt (empty string to exit):hi
+[ INFO ] Sequence of length 1024 is processed with 0.39 requests/sec (2.6 sec per request)
+[ INFO ] Sequence of length 1024 is processed with 0.51 requests/sec (2.0 sec per request)
+[ INFO ] Sequence of length 1024 is processed with 0.46 requests/sec (2.2 sec per request)
+[ INFO ] 40 requests were processed in 116.86sec (2.9sec per request)
+[ INFO ] GENERATED SEQUENCE: hi center's president, Ewa Ermili, telling the Associated Press, which recently bought the Seattle Times' undervalued The Best Park:
+
+They reported a news story about private events that took
+Type input prompt (empty string to exit):who is Ewa Ermili ?
+[ INFO ] Sequence of length 1024 is processed with 0.42 requests/sec (2.4 sec per request)
+[ INFO ] Sequence of length 1024 is processed with 0.46 requests/sec (2.2 sec per request)
+[ INFO ] Sequence of length 1024 is processed with 0.44 requests/sec (2.3 sec per request)
+[ INFO ] Sequence of length 1024 is processed with 0.17 requests/sec (5.8 sec per request)
+[ INFO ] 40 requests were processed in 124.11sec (3.1sec per request)
+[ INFO ] GENERATED SEQUENCE: who is Ewa Ermili ?) returned from her spell of reflection.
+
+Gareth encountered her in a castle far away from home, and his heart began to fear her devotion and conquest.
+
+It would have been a
+```
+
+12. Stable Diffusion
+
+Implementation of Text-To-Image generation using Stable Diffusion on Intel CPU.
+
+Setup 
+```shell
+./stable-diffusion.sh
+```
