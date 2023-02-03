@@ -194,6 +194,11 @@ $ ./text-to-speech.sh
 [ DEBUG ]       ForwardTacotronTime: 1185.6 ms
 ```
 
+Output
+
+https://user-images.githubusercontent.com/60742358/216589708-21a47fbc-5700-428a-a7bc-95db89a5b165.mov
+
+  
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/text-to-speech-en-0001/README.md
 
 10. Vehicle Detection
