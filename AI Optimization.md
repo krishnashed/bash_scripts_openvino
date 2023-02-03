@@ -267,7 +267,7 @@ cd ~/stable_diffusion.openvino
 python demo.py --prompt "<image-description>"
 
 # Example
-# python demo.py --prompt "Street-art painting of Emilia Clarke in style of Banksy, photorealism"
+# python demo.py --prompt "Albert Einstein's sketch"
 ```
 
 Example Output
