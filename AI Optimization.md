@@ -11,6 +11,7 @@
 ```shell
 wget https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh
 ```
+
 2. Execute the shell script
 
 ```shell
@@ -19,11 +20,9 @@ bash Anaconda3-2022.10-Linux-x86_64.sh
 
 3. Press Enter to review the license agreement. Then press and hold Enter to scroll.
 
-
 4. Enter “yes” to agree to the license agreement.
 
 5. Use Enter to accept the default install location, use CTRL+C to cancel the installation, or enter another file path to specify an alternate installation directory. If you accept the default install location, the installer displays PREFIX=/home/<USER>/anaconda<2/3> and continues the installation. It may take a few minutes to complete.
-
 
 6. The installer prompts you to choose whether to initialize Anaconda Distribution by running `conda init`. Anaconda recommends entering “yes”.
 
@@ -34,6 +33,7 @@ bash Anaconda3-2022.10-Linux-x86_64.sh
 ## Installing Openvino
 
 Clone the repository
+
 ```shell
 https://github.com/krishnashed/bash_scripts_openvino.git
 ```
@@ -48,21 +48,23 @@ cd bash_scripts_openvino
 
 ## Testing different Openvino optimized models
 
-1. Handwritten Text Recognition
+### Handwritten Text Recognition
 
 This is a network for handwritten English text recognition scenario. It consists of a CNN followed by Bi-LSTM, reshape layer and a fully connected layer. The network is able to recognize English text consisting of characters in the [GNHK](https://goodnotes.com/gnhk/) dataset.
 
-Passing Input image 
+Passing Input image
+
 <div style="align:center; margin-left:auto; margin-right:auto">
 <img src="https://github.com/krishnashed/bash_scripts_openvino/blob/main/images/handwritting-input.jpg"/>
 </div>
 
 Run it as
+
 ```shell
 $ ./hand-writting-recognition.sh
 
-[ INFO ] OpenVINO Runtime   
-[ INFO ]        build: 2022.3.0-9052-9752fafe8eb-releases/2022/3 
+[ INFO ] OpenVINO Runtime
+[ INFO ]        build: 2022.3.0-9052-9752fafe8eb-releases/2022/3
 [ INFO ] Reading model /home/krishnashed/open_model_zoo/demos/handwritten_text_recognition_demo/python/models/handwritten-english-recognition-0001.xml
 [ INFO ] The model /home/krishnashed/open_model_zoo/demos/handwritten_text_recognition_demo/python/models/handwritten-english-recognition-0001.xml is loaded to CPU
 ['Picture ID. and Passport photo']
@@ -72,12 +74,12 @@ $ ./hand-writting-recognition.sh
 
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/handwritten-english-recognition-0001/README.md
 
-2. Human Pose Estimation
+### Human Pose Estimation
 
 This is a multi-person 2D pose estimation network based on the EfficientHRNet approach (that follows the Associative Embedding framework). For every person in an image, the network detects a human pose: a body skeleton consisting of keypoints and connections between them. The pose may contain up to 17 keypoints: ears, eyes, nose, shoulders, elbows, wrists, hips, knees, and ankles.
 
+Run it as
 
-Run it as 
 ```shell
 ./human-pose-detection.sh
 ```
@@ -88,25 +90,28 @@ Run it as
 
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/human-pose-estimation-0005/README.md
 
-3. Image Retrieval
+### Image Retrieval
 
 Image retrieval model based on MobileNetV2 architecture as a backbone.
 
-Run it as 
+Run it as
+
 ```shell
 ./image-retreival.sh
 ```
+
 <div style="align:center; margin-left:auto; margin-right:auto">
 <img src="https://github.com/krishnashed/bash_scripts_openvino/blob/main/images/image-retrieval.png"/>
 </div>
 
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/image-retrieval-0001/README.md
 
-4. Instance Segmentation
+### Instance Segmentation
 
 This model is an instance segmentation network for 80 classes of objects. It is a Mask R-CNN with ResNet50 backbone, FPN, RPN, detection and segmentation heads.
 
-Run it as 
+Run it as
+
 ```shell
 ./instance-segmentation.sh
 ```
@@ -117,11 +122,12 @@ Run it as
 
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/instance-segmentation-security-0002/README.md
 
-5. Vehicle License plate detection
+### Vehicle License plate detection
 
 This is a MobileNetV2 + SSD-based vehicle and (Chinese) license plate detector for the "Barrier" use case.
 
-Run it as 
+Run it as
+
 ```shell
 ./number-plate-detection.sh
 ```
@@ -132,11 +138,12 @@ Run it as
 
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/vehicle-license-plate-detection-barrier-0106/README.md
 
-6. Person Detection
+### Person Detection
 
 This is a person detector that is based on MobileNetV2 backbone with ATSS head for 1280x720 resolution.
 
-Run it as 
+Run it as
+
 ```shell
 ./person-detection.sh
 ```
@@ -147,11 +154,12 @@ Run it as
 
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/person-detection-0303/README.md
 
-7. Product Detection
+### Product Detection
 
 A product detector based on the SSD-lite architecture with MobileNetV2 as a backbone for self-checkout points of sale-related scenes. The network can detect 12 classes of objects (sprite, kool-aid, extra, ocelo, finish, mtn_dew, best_foods, gatorade, heinz, ruffles, pringles, del_monte). Labels 0 and 1 are related to background_label and undefined correspondingly.
 
-Run it as 
+Run it as
+
 ```shell
 ./product-detection.sh
 ```
@@ -162,14 +170,14 @@ Run it as
 
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/product-detection-0001/README.md
 
-8. Image Segmentation
+### Image Segmentation
 
 This is a segmentation network to classify each pixel into 20 classes:
 
 road, sidewalk, building, wall, fence, pole, traffic light, traffic sign, vegetation, terrain, sky, person, rider, car, truck, bus, train, motorcycle, bicycle, ego-vehicle
 
+Run it as
 
-Run it as 
 ```shell
 ./semantic-segmentation-adas.sh
 ```
@@ -180,11 +188,12 @@ Run it as
 
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/semantic-segmentation-adas-0001/README.md
 
-9. Text-to-speech
+### Text-to-speech
 
 This is a speech synthesis composite model that simultaneously reconstructs mel-spectrogram and wave form from text. The model generates wave form from symbol sequences separated by space. The model is built on top of the modified ForwardTacotron and modified MelGAN frameworks.
 
-Run it as 
+Run it as
+
 ```shell
 $ ./text-to-speech.sh
 
@@ -196,11 +205,12 @@ $ ./text-to-speech.sh
 
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/text-to-speech-en-0001/README.md
 
-10. Vehicle Detection
+### Vehicle Detection
 
 This is a vehicle detector that is based on MobileNetV2 backbone with two SSD heads from 1/16 and 1/8 scale feature maps and clustered prior boxes for 512x512 resolution
 
-Run it as 
+Run it as
+
 ```shell
 ./vehicle-detection.sh
 ```
@@ -211,12 +221,41 @@ Run it as
 
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/vehicle-detection-0202/README.md
 
-11. GPT-2 Text Prediction
+### Safety Gear Detection
+
+This reference implementation is capable of detecting people passing in front of a camera and detecting if the people are wearing safety-jackets and hard-hats. The application counts the number of people who are violating the safety gear standards and the total number of people detected.
+
+Run it as:
+
+```shell
+./safety-gear-detection.sh
+```
+
+<div style="align:center; margin-left:auto; margin-right:auto">
+<img src="https://github.com/krishnashed/bash_scripts_openvino/blob/main/images/safetygear.png"/>
+</div>
+
+### Intruder Detection
+
+This reference implementation detect the objects in a designated area. It gives the number of objects in the frame, total count and also record the alerts of the objects present in the frame. The application is capable of processing the inputs from multiple cameras and video files.
+
+Run it as:
+
+```shell
+./intruder-detection.sh
+```
+
+<div style="align:center; margin-left:auto; margin-right:auto">
+<img src="https://github.com/krishnashed/bash_scripts_openvino/blob/main/images/intruder-detection-1.jpeg"/>
+<img src="https://github.com/krishnashed/bash_scripts_openvino/blob/main/images/intruder-detection-2.jpeg"/>
+</div>
+
+### GPT-2 Text Prediction
 
 The `gpt-2` model is a one of Generative Pre-trained Transformer (GPT) model family, pre-trained on a very large corpus of English data in a self-supervised fashion. The GPT architecture implements a deep neural network, specifically a transformer model, which uses attention in place of previous recurrence- and convolution-based architectures. Attention mechanisms allow the model to selectively focus on segments of input text it predicts to be the most relevant. GPT-2 is trained with a simple objective: predict the next word, given all of the previous words within some text.
 
+Run it as
 
-Run it as 
 ```shell
 $ ./gpt2.sh
 
@@ -246,21 +285,24 @@ Gareth encountered her in a castle far away from home, and his heart began to fe
 It would have been a
 ```
 
-12. Stable Diffusion
+### Stable Diffusion
 
 Implementation of Text-To-Image generation using Stable Diffusion on Intel CPU.
 
 To setup the environment `stable_diffusion` run
+
 ```shell
 ./stable-diffusion.sh
 ```
 
-Activate the `stable_diffusion` conda virtual environment 
+Activate the `stable_diffusion` conda virtual environment
+
 ```shell
 conda activate stable_diffusion
 ```
 
 Run the model, by entering image description
+
 ```shell
 cd ~/stable_diffusion.openvino
 
