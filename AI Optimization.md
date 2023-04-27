@@ -232,7 +232,7 @@ Run it as:
 ```
 
 <div style="align:center; margin-left:auto; margin-right:auto">
-<img src="https://github.com/krishnashed/bash_scripts_openvino/blob/main/images/safetygear.png"/>
+<img src="https://github.com/krishnashed/bash_scripts_openvino/blob/main/images/safety-gear.png"/>
 </div>
 
 ### Intruder Detection
