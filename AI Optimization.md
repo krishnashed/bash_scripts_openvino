@@ -170,7 +170,7 @@ Run it as
 
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/product-detection-0001/README.md
 
-### Image Segmentation
+### Semantic Segmentation
 
 This is a segmentation network to classify each pixel into 20 classes:
 
@@ -184,6 +184,23 @@ Run it as
 
 <div style="align:center; margin-left:auto; margin-right:auto">
 <img src="https://github.com/krishnashed/bash_scripts_openvino/blob/main/images/semantic-segmentation.png"/>
+</div>
+
+More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/semantic-segmentation-adas-0001/README.md
+
+### Instance Segmentation
+
+This demo shows how to perform instance segmentation using OpenVINO.
+Application expects an instance segmentation model in the Intermediate Representation (IR) format with the following constraints:
+
+Run it as
+
+```shell
+./semantic-segmentation-adas.sh
+```
+
+<div style="align:center; margin-left:auto; margin-right:auto">
+<img src="https://github.com/krishnashed/bash_scripts_openvino/blob/main/images/instance-segmentation.png"/>
 </div>
 
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/semantic-segmentation-adas-0001/README.md
