@@ -106,22 +106,6 @@ Run it as
 
 More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/image-retrieval-0001/README.md
 
-### Instance Segmentation
-
-This model is an instance segmentation network for 80 classes of objects. It is a Mask R-CNN with ResNet50 backbone, FPN, RPN, detection and segmentation heads.
-
-Run it as
-
-```shell
-./instance-segmentation.sh
-```
-
-<div style="align:center; margin-left:auto; margin-right:auto">
-<img src="https://github.com/krishnashed/bash_scripts_openvino/blob/main/images/instance-segmentation.png"/>
-</div>
-
-More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/instance-segmentation-security-0002/README.md
-
 ### Vehicle License plate detection
 
 This is a MobileNetV2 + SSD-based vehicle and (Chinese) license plate detector for the "Barrier" use case.
@@ -203,7 +187,7 @@ Run it as
 <img src="https://github.com/krishnashed/bash_scripts_openvino/blob/main/images/instance-segmentation.png"/>
 </div>
 
-More Details at : https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/intel/semantic-segmentation-adas-0001/README.md
+More Details at : https://github.com/openvinotoolkit/open_model_zoo/tree/master/demos/instance_segmentation_demo/python
 
 ### Text-to-speech
 
